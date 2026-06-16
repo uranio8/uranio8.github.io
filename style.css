@@ -1,12 +1,12 @@
-/* =========================
+/* ==========================
    CONFIGURAÇÕES GERAIS
-========================= */
+========================== */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 
@@ -16,37 +16,57 @@ html {
 
 
 body {
+
     background-color: #fffdf5;
+
     color: #333;
+
 }
 
 
 img {
+
     max-width: 100%;
+
 }
 
 
 
-/* =========================
-   CABEÇALHO
-========================= */
+
+
+
+
+/* ==========================
+        CABEÇALHO
+========================== */
 
 
 header {
 
+
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
 
-    padding: 20px 8%;
 
-    background-color: white;
+    padding: 15px 8%;
 
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+
+    background:white;
+
+
+    box-shadow:
+    0 3px 10px rgba(0,0,0,0.10);
+
 
     position: sticky;
-    top: 0;
-    z-index: 10;
+
+    top:0;
+
+    z-index:100;
+
 
 }
 
@@ -54,30 +74,41 @@ header {
 
 .logo img {
 
-    width: 120px;
+
+    width:130px;
+
 
 }
+
+
 
 
 
 nav {
 
-    display: flex;
-    gap: 25px;
+
+    display:flex;
+
+    gap:25px;
+
 
 }
 
 
-
 nav a {
 
-    text-decoration: none;
 
-    color: #2d6a3d;
+    text-decoration:none;
 
-    font-weight: bold;
 
-    transition: .3s;
+    color:#2d6a3d;
+
+
+    font-weight:bold;
+
+
+    transition:0.3s;
+
 
 }
 
@@ -85,7 +116,9 @@ nav a {
 
 nav a:hover {
 
-    color: #e63946;
+
+    color:#e63946;
+
 
 }
 
@@ -93,30 +126,39 @@ nav a:hover {
 
 
 
-/* =========================
-   BANNER
-========================= */
+
+
+/* ==========================
+          BANNER
+========================== */
 
 
 .banner {
 
-    min-height: 85vh;
 
-    display: flex;
+    min-height:85vh;
 
-    align-items: center;
 
-    justify-content: space-between;
+    display:flex;
 
-    padding: 50px 8%;
+
+    align-items:center;
+
+
+    justify-content:space-between;
+
+
+    padding:50px 8%;
+
 
     background:
 
     linear-gradient(
-        120deg,
-        #fff8d6,
-        #e8f5e9
+    120deg,
+    #fff7cc,
+    #e8f5e9
     );
+
 
 }
 
@@ -124,7 +166,9 @@ nav a:hover {
 
 .banner-texto {
 
-    width: 50%;
+
+    width:50%;
+
 
 }
 
@@ -132,23 +176,35 @@ nav a:hover {
 
 .banner-texto h1 {
 
-    font-size: 48px;
 
-    color: #2d6a3d;
+    font-size:48px;
 
-    margin-bottom: 20px;
+
+    color:#2d6a3d;
+
+
+    line-height:1.2;
+
+
+    margin-bottom:20px;
+
 
 }
 
 
 
+
 .banner-texto p {
 
-    font-size: 20px;
 
-    line-height: 1.6;
+    font-size:20px;
 
-    margin-bottom: 30px;
+
+    line-height:1.6;
+
+
+    margin-bottom:30px;
+
 
 }
 
@@ -156,7 +212,9 @@ nav a:hover {
 
 .banner-imagem {
 
-    width: 40%;
+
+    width:40%;
+
 
 }
 
@@ -164,7 +222,9 @@ nav a:hover {
 
 .banner-imagem img {
 
-    border-radius: 30px;
+
+    border-radius:30px;
+
 
 }
 
@@ -172,26 +232,38 @@ nav a:hover {
 
 
 
-/* BOTÃO WHATSAPP */
+
+/* ==========================
+       BOTÃO WHATSAPP
+========================== */
 
 
 .botao-whatsapp {
 
-    display: inline-block;
 
-    background-color: #25D366;
+    display:inline-block;
 
-    color: white;
 
-    padding: 15px 30px;
+    background:#25D366;
 
-    border-radius: 30px;
 
-    text-decoration: none;
+    color:white;
 
-    font-weight: bold;
 
-    transition: .3s;
+    padding:15px 30px;
+
+
+    border-radius:30px;
+
+
+    text-decoration:none;
+
+
+    font-weight:bold;
+
+
+    transition:0.3s;
+
 
 }
 
@@ -199,7 +271,9 @@ nav a:hover {
 
 .botao-whatsapp:hover {
 
-    transform: scale(1.05);
+
+    transform:scale(1.05);
+
 
 }
 
@@ -207,14 +281,18 @@ nav a:hover {
 
 
 
-/* =========================
-   SEÇÕES
-========================= */
+
+
+/* ==========================
+          SEÇÕES
+========================== */
 
 
 section {
 
-    padding: 70px 8%;
+
+    padding:70px 8%;
+
 
 }
 
@@ -222,13 +300,18 @@ section {
 
 section h2 {
 
-    text-align: center;
 
-    font-size: 36px;
+    text-align:center;
 
-    margin-bottom: 40px;
 
-    color: #2d6a3d;
+    color:#2d6a3d;
+
+
+    font-size:36px;
+
+
+    margin-bottom:40px;
+
 
 }
 
@@ -236,20 +319,28 @@ section h2 {
 
 
 
-/* =========================
-   COMO FUNCIONA
-========================= */
+
+
+
+/* ==========================
+       COMO FUNCIONA
+========================== */
 
 
 .cards {
 
-    display: flex;
 
-    justify-content: center;
+    display:flex;
 
-    gap: 30px;
 
-    flex-wrap: wrap;
+    justify-content:center;
+
+
+    gap:30px;
+
+
+    flex-wrap:wrap;
+
 
 }
 
@@ -257,19 +348,26 @@ section h2 {
 
 .card {
 
-    background: white;
 
-    width: 300px;
+    background:white;
 
-    padding: 30px;
 
-    text-align: center;
+    width:300px;
 
-    border-radius: 20px;
+
+    padding:30px;
+
+
+    border-radius:20px;
+
+
+    text-align:center;
+
 
     box-shadow:
 
-    0 5px 15px rgba(0,0,0,0.08);
+    0 5px 15px rgba(0,0,0,0.10);
+
 
 }
 
@@ -277,9 +375,22 @@ section h2 {
 
 .card h3 {
 
-    color: #e63946;
 
-    margin-bottom: 15px;
+    color:#e63946;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.card p {
+
+
+    line-height:1.5;
+
 
 }
 
@@ -287,42 +398,54 @@ section h2 {
 
 
 
-/* =========================
-   CATÁLOGO
-========================= */
+
+
+/* ==========================
+          CATÁLOGO
+========================== */
 
 
 .catalogo {
 
-    display: flex;
 
-    justify-content: center;
+    display:grid;
 
-    gap: 30px;
 
-    flex-wrap: wrap;
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(250px,1fr));
+
+
+    gap:30px;
+
 
 }
+
 
 
 
 .fruta {
 
-    background: white;
 
-    width: 280px;
+    background:white;
 
-    padding: 20px;
 
-    border-radius: 20px;
+    padding:25px;
 
-    text-align: center;
+
+    border-radius:25px;
+
+
+    text-align:center;
+
 
     box-shadow:
 
-    0 5px 15px rgba(0,0,0,0.1);
+    0 5px 15px rgba(0,0,0,0.10);
 
-    transition: .3s;
+
+    transition:0.3s;
+
 
 }
 
@@ -330,21 +453,30 @@ section h2 {
 
 .fruta:hover {
 
-    transform: translateY(-8px);
+
+    transform:translateY(-10px);
+
 
 }
 
 
 
+
+
 .fruta img {
 
-    width: 180px;
 
-    height: 180px;
+    width:180px;
 
-    object-fit: cover;
 
-    border-radius: 50%;
+    height:180px;
+
+
+    object-fit:cover;
+
+
+    border-radius:50%;
+
 
 }
 
@@ -352,9 +484,15 @@ section h2 {
 
 .fruta h3 {
 
-    margin-top: 15px;
 
-    color: #2d6a3d;
+    margin-top:20px;
+
+
+    color:#2d6a3d;
+
+
+    font-size:22px;
+
 
 }
 
@@ -362,29 +500,50 @@ section h2 {
 
 .fruta p {
 
-    font-size: 18px;
 
-    margin: 10px;
+    font-size:20px;
+
+
+    font-weight:bold;
+
+
+    margin:15px;
+
+
+    color:#e63946;
+
 
 }
 
 
 
+
 .fruta button {
 
-    background-color: #e63946;
-
-    color:white;
 
     border:none;
 
-    padding:12px 25px;
 
-    border-radius:20px;
+    background:#2d6a3d;
+
+
+    color:white;
+
+
+    padding:12px 30px;
+
+
+    border-radius:25px;
+
 
     cursor:pointer;
 
+
     font-weight:bold;
+
+
+    transition:0.3s;
+
 
 }
 
@@ -392,7 +551,9 @@ section h2 {
 
 .fruta button:hover {
 
-    background-color:#c1121f;
+
+    background:#1b4332;
+
 
 }
 
@@ -400,16 +561,23 @@ section h2 {
 
 
 
-/* =========================
-   SOBRE
-========================= */
+
+
+
+
+/* ==========================
+            SOBRE
+========================== */
 
 
 #sobre {
 
-    background-color:#e8f5e9;
+
+    background:#e8f5e9;
+
 
     text-align:center;
+
 
 }
 
@@ -417,13 +585,18 @@ section h2 {
 
 #sobre p {
 
+
     max-width:800px;
+
 
     margin:auto;
 
+
     font-size:18px;
 
+
     line-height:1.8;
+
 
 }
 
@@ -431,14 +604,33 @@ section h2 {
 
 
 
-/* =========================
-   CONTATO
-========================= */
+
+
+
+/* ==========================
+          CONTATO
+========================== */
 
 
 #contato {
 
+
     text-align:center;
+
+
+}
+
+
+
+
+#contato p {
+
+
+    font-size:20px;
+
+
+    margin-bottom:20px;
+
 
 }
 
@@ -446,20 +638,28 @@ section h2 {
 
 
 
-/* =========================
-   RODAPÉ
-========================= */
+
+
+
+/* ==========================
+          RODAPÉ
+========================== */
 
 
 footer {
 
+
     background:#2d6a3d;
+
 
     color:white;
 
-    text-align:center;
 
     padding:30px;
+
+
+    text-align:center;
+
 
 }
 
@@ -467,7 +667,9 @@ footer {
 
 footer p {
 
+
     margin:8px;
+
 
 }
 
@@ -475,38 +677,53 @@ footer p {
 
 
 
-/* =========================
-   CELULAR
-========================= */
+
+
+
+/* ==========================
+        CELULAR
+========================== */
 
 
 @media(max-width:800px){
 
 
+
 header {
+
 
     flex-direction:column;
 
+
     gap:15px;
 
+
 }
+
 
 
 nav {
 
+
     flex-wrap:wrap;
+
 
     justify-content:center;
 
+
 }
+
 
 
 
 .banner {
 
+
     flex-direction:column;
 
+
     text-align:center;
+
 
 }
 
@@ -514,7 +731,9 @@ nav {
 
 .banner-texto {
 
+
     width:100%;
+
 
 }
 
@@ -522,7 +741,9 @@ nav {
 
 .banner-texto h1 {
 
+
     font-size:35px;
+
 
 }
 
@@ -530,19 +751,24 @@ nav {
 
 .banner-imagem {
 
+
     width:90%;
 
+
     margin-top:30px;
+
 
 }
 
 
 
-.cards {
 
-    flex-direction:column;
 
-    align-items:center;
+.catalogo {
+
+
+    grid-template-columns:1fr;
+
 
 }
 
@@ -550,10 +776,11 @@ nav {
 
 .fruta {
 
-    width:90%;
+
+    width:100%;
+
 
 }
-
 
 
 }
